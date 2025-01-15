@@ -1,0 +1,161 @@
+//-----COLORS-----//
+//PRIMARY GREEN
+$primary-light-green: rgb(50, 160, 100);
+$primary-medium-green: rgb(0, 150, 60);
+$primary-dark-green: rgb(0, 80, 40);
+
+//SECONDARY GREEN
+$secondary-color-medium-green: rgb(0, 140, 60);
+
+//BUTTON COLORS
+$btn-color-red: rgb(180, 0, 0);
+$btn-color-yellow: rgb(200, 200, 0);
+$btn-color-green: rgb(0, 150, 60);
+
+//NEUTRAL
+$neutral-color-white: rgb(255,255,255);
+$neutral-color-light-gray: rgb(235,235,235);
+$neutral-color-medium-gray: rgb(130,130,130);
+$neutral-color-dark-gray: rgb(25,25,25);
+
+
+
+//-----Typography-----//
+
+//IMPORTS
+@font-face { font-family: 'GiphursThin'; src: url(../src/assets/fonts/Giphurs-Thin.otf) format('truetype');}
+@font-face { font-family: 'GiphursExtraLight'; src: url(../src/assets/fonts/Giphurs-ExtraLight.otf) format('truetype');}
+@font-face { font-family: 'GiphursLight'; src: url(../src/assets/fonts/Giphurs-Light.otf) format('truetype');}
+@font-face { font-family: 'GiphursRegular'; src: url(../src/assets/fonts/Giphurs-Regular.otf) format('truetype');}
+@font-face { font-family: 'GiphursMedium'; src: url(../src/assets/fonts/Giphurs-Medium.otf) format('truetype');}
+@font-face { font-family: 'GiphursSemiBold'; src: url(../src/assets/fonts/Giphurs-SemiBold.otf) format('truetype');}
+@font-face { font-family: 'GiphursBold'; src: url(../src/assets/fonts/Giphurs-Bold.otf) format('truetype');}
+@font-face { font-family: 'GiphursExtraBold'; src: url(../src/assets/fonts/Giphurs-ExtraBold.otf) format('truetype');}
+@font-face { font-family: 'GiphursBlack'; src: url(../src/assets/fonts/Giphurs-Black.otf) format('truetype');}
+
+
+@font-face { font-family: 'KantumruyLight'; src: url(../src/assets/fonts/Kantumruy-Light.ttf) format('truetype');}
+@font-face { font-family: 'KantumruyRegular'; src: url(../src/assets/fonts/Kantumruy-Regular.ttf) format('truetype');}
+@font-face { font-family: 'KantumruyBold'; src: url(../src/assets/fonts/Kantumruy-Bold.ttf) format('truetype');}
+
+
+//-----Font Definitions-----//
+
+//DESKTOP
+$webAdjPLUS: clamp(42px, 3.1vw, 48px);
+$webAdj42px: clamp(36px, 2.8vw, 42px);
+$webAdj36px: clamp(32px, 2.5vw, 36px);
+$webAdj32px: clamp(28px, 2.2vw, 32px);
+$webAdj30px: clamp(26px, 2.1vw, 30px);
+$webAdj26px: clamp(24px, 1.9vw, 26px);
+$webAdj24px: clamp(20px, 1.65vw, 24px);
+$webAdj20px: clamp(18px, 1.32vw, 20px);
+$webAdj18px: clamp(16px, 1.21vw, 18px);
+$webAdj16px: clamp(14px, 1.1vw, 16px);
+$webAdj15px: clamp(13px, 1.03vw, 15px);
+$webAdj14px: clamp(12px, 0.96vw, 14px);
+$webAdj13px: clamp(11px, 0.9vw, 13px);
+$webAdj12px: clamp(10px, 0.81vw, 12px);
+
+$title-h1-PLUS: normal $webAdjPLUS 'GiphursBlack', sans-serif;
+$title-h1-42px: normal $webAdj42px 'GiphursBlack', sans-serif;
+$title-h2-36px: normal $webAdj36px 'GiphursBold', sans-serif;
+$title-h3-30px: normal $webAdj30px 'GiphursBold', sans-serif;
+$title-h4-24px: normal $webAdj24px 'GiphursBold', sans-serif;
+$title-h5-20px: normal $webAdj20px 'GiphursBold', sans-serif;
+$title-h6-16px: normal $webAdj16px 'GiphursBold', sans-serif;
+
+$paragraph-24px: normal $webAdj24px 'KantumruyRegular', sans-serif;
+$paragraph-20px: normal $webAdj20px 'KantumruyRegular', sans-serif;
+$paragraph-18px: normal $webAdj18px 'KantumruyRegular', sans-serif;
+$paragraph-16px: normal $webAdj16px 'KantumruyRegular', sans-serif;
+$paragraph-15px: normal $webAdj15px 'KantumruyRegular', sans-serif;
+$paragraph-14px: normal $webAdj14px 'KantumruyRegular', sans-serif;
+$paragraph-13px: normal $webAdj13px 'KantumruyRegular', sans-serif;
+$paragraph-12px: normal $webAdj12px 'KantumruyRegular', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+html{scroll-behavior: smooth !important; transition: 0.8s !important; }
+/* Barras de Rolagem (tamanho | fundo da barra onde corre a seta | alça da barra que mostra a altura que está) */
+::-webkit-scrollbar {width:12px; height: 12px;}
+::-webkit-scrollbar-track {background: $primary-medium-green;}
+::-webkit-scrollbar-thumb {background: $primary-dark-green;}
+::-webkit-scrollbar:vertical{display: none;}
+
+body{
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    background-color: $primary-medium-green;
+    aspect-ratio: 9/16;
+    overflow: hidden;
+}
+
+#root{
+    touch-action:pan-y;
+    background-color: $neutral-color-light-gray;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+@mixin standard-button(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $btn-color-green;
+    border-style: none;
+    border-radius: 5px;
+    color: $neutral-color-white;
+    font: $title-h6-16px;
+    letter-spacing: 0.8px;
+    position: relative;
+    z-index: 1;
+}
+
+.standard-button-small{
+    width: 120px;
+    height: 40px;
+    @include standard-button();
+}
+
+.standard-button-medium{
+    width: 200px;
+    height: 45px;
+    @include standard-button();
+}
+
+
+@media screen and (min-width: 500px){
+
+    body{
+        max-width: 440px;
+        max-height: 90vh;
+        padding-top: 5vh;
+        padding-left: calc(50% - 220px);
+
+        #root{
+            box-shadow: 0 0 25px rgba($neutral-color-dark-gray , 0.5);
+        }
+    }
+}
+
+@media screen and (min-width: 441px) and (max-width: 1199px) and (orientation: landscape) {
+    body{
+        width: 100vw;
+        height: calc(var(--vh, 1vh) * 100);
+        transform: rotate(90deg);
+        transform-origin: left top;
+        overflow: hidden;
+    }
+}
