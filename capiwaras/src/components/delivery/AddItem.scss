@@ -1,0 +1,240 @@
+@use '../../App.scss';
+
+@mixin food-description-text ($text-size){
+    font: $text-size;
+    color: App.$primary-medium-green;
+    padding: 0 5%;  
+}
+
+.delivery-add-item-container{
+    overflow-y: scroll;
+
+    .delivery-header-container{
+        width: 100%;
+        height: 50px;
+        background-color: App.$neutral-color-white;
+        display: flex;
+        position: fixed;
+        box-shadow: 0 2px 8px rgba(App.$neutral-color-dark-gray, 0.2);
+
+        div{
+            height: 100%;
+            width: 25px;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin-left: 20px;
+
+            img{
+                width: 25px;
+                height: 16px;
+                background-size:cover;
+                align-self: center;
+            }
+        }
+
+        p{
+            width: calc(100% - 25px);
+            height: 50px;
+            margin-left: 8px;
+            z-index: 1;
+            font: App.$title-h5-20px;
+            color: App.$primary-dark-green;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .food-description-container{ 
+        
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 25px;
+        }
+
+        h1{
+            @include food-description-text(App.$title-h3-30px);
+        }
+
+        .food-description{
+            @include food-description-text(App.$paragraph-16px);
+        }
+
+        .promo-value-container{
+            display: flex;
+            padding-left: 5%;
+
+            .food-value{
+                font: App.$title-h5-20px;
+                color: App.$primary-medium-green;
+                margin: 0 5px 25px 0;
+            }
+
+            .original-value{
+                text-decoration: line-through;
+                color: App.$neutral-color-medium-gray;
+            }
+        }
+    }
+
+    .aditional-items-container{
+
+        .title-container{
+            width: 90%;
+            height: 80px;
+            background-color: App.$primary-medium-green;
+            color: App.$neutral-color-white;
+            padding: 0 5%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 7px;
+
+            h4{
+                font: App.$title-h4-24px;
+            }
+
+            p{
+                font: App.$paragraph-14px;
+            }
+        }
+
+        .item-container:last-of-type{
+            margin-bottom: 25px;
+        }
+
+        .item-container{
+            width: 90%;
+            height: 80px;
+            background-color: App.$neutral-color-white;
+            color: App.$primary-medium-green;
+            padding: 0 5%;
+            display: grid;
+            grid-template-columns: 55% 25% 20%;
+            align-items: center;
+            margin-bottom: 7px;
+
+            .title-item-container{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 10px;
+                margin-right: 10px;
+
+                h6{
+                    font: App.$title-h6-16px;
+                }
+
+                p{
+                    font: App.$paragraph-14px;
+                }
+            }
+
+            img{
+                justify-self: center;
+                min-width: 60px;
+                width: 80px;
+                height: 70%;
+                min-height: 47.5px;
+            }
+
+            .item-buttons-container{
+                height: 100%;
+                width: auto;
+                justify-content: space-evenly;
+                align-items: center;
+                display: flex;
+                font: App.$title-h6-16px;
+
+                button{
+                    border: none;
+                    background: none;
+                    color: App.$primary-medium-green;
+                    font: App.$title-h4-24px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .observation-text-container{
+        width: 90%;
+        height: 80px;
+        background-color: App.$primary-medium-green;
+        color: App.$neutral-color-white;
+        padding: 0 5%;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .observation-title{
+
+            h4{
+                font: App.$title-h4-24px;
+            }
+
+            p{
+                font: App.$paragraph-14px;
+            }
+        }
+
+        .text-length{
+            height: 50%;
+            text-align: center;
+            font: App.$paragraph-14px;
+        }
+    }
+
+    textarea{
+        width: calc(90% - 8px);
+        height: 68px;
+        margin-left: 5%;
+        margin-bottom: 35px;
+        border-radius: 5px;
+        padding: 1px 2px 1px 6px;
+        font: App.$paragraph-14px;
+        color: App.$neutral-color-dark-gray;
+        letter-spacing: 0.3px;
+    }
+
+    .add-quantity-container{
+        width: 90%;
+        height: auto;
+        margin: 0 5% 35px 5%;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        justify-items: end;
+
+        .quantity-buttons-container{
+            height: 100%;
+            width: auto;
+            align-items: center;
+            display: flex;
+            font: App.$title-h6-16px;
+            color: App.$primary-medium-green;
+
+            button{
+                border: none;
+                background: none;
+                color: App.$primary-medium-green;
+                font: App.$title-h3-30px;
+                margin: 0 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+
+    .delivery-add-item-container{
+
+        .delivery-header-container{
+            width: 440px;
+        }
+    }
+}
