@@ -1,0 +1,48 @@
+Olá! Seja muito bem vindo(a) ao meu repositório público.
+
+Nele, disponibilizo pequenos projetos acadêmicos e reais, tendo a finalidade de trocar conhecimento e apresentar minha forma de trabalhar.
+
+
+SUNSET:
+
+O projeto Sunset foi um redesenho do site https://sunsetriorental.com/ , com o objetivo de torná-lo mais leve e também aplicar meu conhecimento em Javascript, HTML e CSS.
+Sunset foi o primeiro passo que dei nessas linguagens, então ele não segue as melhores práticas em organização, por exemplo, mas foi importantíssimo para praticar e aprender
+recursos e sintaxes. Ele permanece presente porque me orgulho da decisão de retornar a T.I e porque ele foi minha primeira iniciativa de recomeço.
+
+PRIME LANGUAGE SCHOOL:
+
+A página PRIME foi um acordo feito entre o professor Alexandre, que possui uma escola de língua inglesa em Copacabana, e eu. Ele, assim como eu, estava recomeçando tudo do zero,
+então precisou de uma nova identidade visual, além de mídias digitais e impressas. Ele já possuía contrato com a Local Web, mas não tinha capital para investir num site, assim como
+eu não tinha para investir num curso vip em inglês. Foi aí que surgiu a ideia de unir nossas necessidades, sendo ele me ajudando a alcançar a fluência em inglês e eu o ajudando a
+organizar a imagem da empresa.
+Há muito mais sobre esse fato, mas mantenho aqui somente esse resumo.
+
+
+CAPIWARAS:
+
+O mini projeto Capiwaras surgiu com a minha necessidade de fazer algo mais elaborado e com a necessidade de praticar React e Figma, que fazem parte dos últimos cursos que estou 
+fazendo. 
+O mini projeto foi inspirado no meu restaurante preferido - acredite se puder - Giraffas.
+Como eu precisava criar no Figma uma identidade visual e definir a paleta de cores, bem como a tipografia do projeto, resolvi elaborar um conceito.
+O conceito é um animal que tivesse a ver com a fauna brasileira, além de se alimentar de forma saudável, mesmo que sua aparência não indicasse isso. Foi assisindo ao show de retorno
+da minha banda preferida (Linkin Park) ao Brasil, que tive a ideia da Capivara, pois a Emily (vocalista) recebeu uma -de pelúcia- de presente dos fãs.
+Capiwara em Tupi significa Comedor de capim. Esse é o significado perfeito para a "alimentação verde" que eu tinha em mente. Fora isso, o fato de estar escrito com "W", ou seja, duplo
+"V", reforça a minha homenagem ao Giraffas, que possui duas girafas na marca. É por isso que o "W" está destacado na tipografia. Capiwaras foi criado pensando como um aplicativo estilo
+Ifood, mas resolvi dividir em 3 partes, sendo a Home para apresentação de banners criados com inteligência artifical e editados nos softwares Adobe Photoshop e Adobe Illustrator, além
+do Menu para fazer o cadastro, a edição e remoção dos itens e das categorias, e a página Delivery, que simula um pedido. A página é mobile only e se comporta como tal em resoluções
+maiores, limitando seu tamanho ao de um Iphone 16 Pro Max.
+Ficarei feliz em explicar as funcionalidades.
+
+
+VOCABARY:
+
+É um mini projeto que foi somente iniciado, mas que utilizarei para criar um grande banco de dados em inglês, com palavras exibidas e flashcards e jogos que ajudam na memorização das
+mesmas. É um motivo para também aplicar Typescript e autenticação com o Firebase, além de aplicar o conceito de Glassmorphism, que é um conceito de layouts simulando vidro. Se encontra,
+por enquanto em fase inicial e, por não ter uma identidade visual elaborada, possui uma marca feita por AI e estilos que ainda serão melhor definidos.
+
+
+RUSSELSHOP:
+
+Foi um teste enviado por uma empresa na qual me candidatei para iniciar um estágio. O objetivo foi reproduzir com fidelidade o que foi apresentado pela empresa no arquivo exportado em
+Figma. Nele eu pude aplicar o que vim estudando nesses últimos tempos e pude me divertir enquanto criava. Possui ações simples, mas pude reforçar o conceito de responsividade e o
+uso do Router em React para redirecionamentos de páginas.
